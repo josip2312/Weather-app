@@ -11,7 +11,6 @@ form.addEventListener('submit', (e) => {
 	if (city !== '') {
 		weather.changeLocation(city);
 		getWeather();
-		document.body.style.zoom = '100%';
 	} else {
 		alert('You must enter a value!');
 	}
