@@ -23,7 +23,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 46.875em) {
   html {
     font-size: 45%;
   }
@@ -67,10 +67,15 @@ body {
   }
 }
 
-nav {
+header {
+  width: 100%;
+  background-color: #273c75;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,10 +85,16 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 90%;
   min-height: 10vh;
-  background-color: #273c75;
+  margin: auto;
   padding: 1rem 2.5rem;
+}
+
+@media only screen and (max-width: 46.875em) {
+  nav {
+    width: 100%;
+  }
 }
 
 .btn {
@@ -113,7 +124,7 @@ nav {
           justify-content: flex-start;
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 46.875em) {
   .heading {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -135,7 +146,7 @@ nav {
   justify-self: flex-start;
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 46.875em) {
   .heading span {
     margin: 0;
   }
@@ -160,7 +171,7 @@ nav {
           flex: 2;
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 46.875em) {
   .search {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -175,7 +186,7 @@ nav {
   font-size: 2rem;
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 46.875em) {
   .search label {
     margin-top: 1rem;
   }
@@ -195,14 +206,14 @@ nav {
   color: #000;
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 46.875em) {
   .search input {
     margin-top: 1.5rem;
     width: 60%;
   }
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 46.875em) {
   .search button {
     margin: 1.5rem 0;
     width: 60%;
@@ -235,7 +246,7 @@ main {
           align-items: center;
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 46.875em) {
   main {
     padding-bottom: 7.5rem;
   }
@@ -266,7 +277,7 @@ main {
           animation: drop 1s ease;
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 46.875em) {
   .weather {
     width: 65%;
   }
@@ -284,7 +295,7 @@ main {
       justify-content: space-around;
 }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 46.875em) {
   .weather-main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
