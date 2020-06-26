@@ -235,6 +235,12 @@ main {
           align-items: center;
 }
 
+@media only screen and (max-width: 43.75em) {
+  main {
+    padding-bottom: 7.5rem;
+  }
+}
+
 .weather {
   height: 60vh;
   background: #cecfd3;
