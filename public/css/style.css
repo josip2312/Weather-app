@@ -283,6 +283,12 @@ main {
   }
 }
 
+@media only screen and (max-width: 31.25em) {
+  .weather {
+    width: 80%;
+  }
+}
+
 .weather-main {
   display: -webkit-box;
   display: -ms-flexbox;

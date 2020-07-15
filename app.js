@@ -25,6 +25,6 @@ function getWeather() {
 			console.log(result);
 		})
 		.catch((err) => {
-			console.log(err);
+			alert('No city with that name');
 		});
 }
