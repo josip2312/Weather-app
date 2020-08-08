@@ -8,7 +8,7 @@ const feelsLike = document.querySelector('.weather-feels_like');
 const humidity = document.querySelector('.weather-humidity');
 const pressure = document.querySelector('.weather-pressure');
 
-function UIpaint(weather) {
+export default function UIpaint(weather) {
 	loc.textContent = weather.name;
 	state.textContent = weather.sys.country;
 	temperature.innerHTML = `${weather.main.temp} &deg; C`;

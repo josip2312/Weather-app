@@ -1,0 +1,24 @@
+{
+	"name": "weather-app",
+	"version": "1.0.0",
+	"description": "Open Weather API mini application",
+	"main": "app.js",
+	"scripts": {
+		"dev": "parcel index.html",
+		"build": "parcel build index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/josip2312/Weather-app.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/josip2312/Weather-app/issues"
+	},
+	"homepage": "https://github.com/josip2312/Weather-app#readme",
+	"dependencies": {
+		"axios": "^0.19.2",
+		"regenerator-runtime": "^0.13.7"
+	}
+}

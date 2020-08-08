@@ -1,3 +1,7 @@
+import Weather from './weather';
+import UIpaint from './ui';
+import 'regenerator-runtime/runtime';
+
 const weather = new Weather('Mostar');
 
 document.addEventListener('DOMContentLoaded', getWeather);
@@ -16,7 +20,6 @@ form.addEventListener('submit', (e) => {
 	}
 });
 
-//asinkrono pa kad vrati promise puni se sadrzaj
 function getWeather() {
 	weather
 		.getWeather()
@@ -25,6 +28,7 @@ function getWeather() {
 			console.log(result);
 		})
 		.catch((err) => {
+			console.log(err);
 			alert('No city with that name');
 		});
 }
