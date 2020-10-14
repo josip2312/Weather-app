@@ -14,6 +14,7 @@ $font-color: #444;
 	box-sizing: inherit;
 }
 
+$bp-4k: 125em; //2000
 $bp-large: 68.75em; //1100px
 $bp-medium: 56.25em; //900px
 $bp-small: 46.875em; //750px
@@ -21,12 +22,12 @@ $bp-smallest: 31.25em; //500px
 
 html {
 	box-sizing: border-box;
-	font-size: 60%;
-	@media only screen and(max-width:$bp-large) {
-		font-size: 50%;
+	font-size: 62.5%;
+	@media only screen and(min-width:$bp-4k) {
+		font-size: 100%;
 	}
-	@media only screen and(max-width:$bp-small) {
-		font-size: 45%;
+	@media only screen and(max-width:$bp-medium) {
+		font-size: 50%;
 	}
 }
 

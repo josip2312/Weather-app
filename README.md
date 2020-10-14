@@ -1,4 +1,5 @@
 # Weather-app
-Open Weather API mini application
 
-Made with html, sass and vanilla JS
+Simple Open Weather API mini application
+
+Made with html, sass, vanilla JS and Parcel bundler

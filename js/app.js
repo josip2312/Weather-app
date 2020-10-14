@@ -6,11 +6,12 @@ const weather = new Weather('Mostar');
 
 document.addEventListener('DOMContentLoaded', getWeather);
 
+const loader = document.querySelector('.loading');
 const form = document.querySelector('form');
 
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
-	e.stopPropagation();
+
 	const city = document.querySelector('#search').value;
 	if (city !== '') {
 		weather.changeLocation(city);
@@ -24,11 +25,14 @@ function getWeather() {
 	weather
 		.getWeather()
 		.then((result) => {
+			loader.classList.toggle('visible');
 			UIpaint(result);
+			console.log('Load complete');
 			console.log(result);
 		})
 		.catch((err) => {
-			console.log(err);
+			loader.classList.toggle('visible');
+			console.error(err);
 			alert('No city with that name');
 		});
 }
