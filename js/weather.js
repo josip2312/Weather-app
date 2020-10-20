@@ -1,5 +1,7 @@
 import axios from 'axios';
 import 'regenerator-runtime/runtime';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export default class Weather {
 	constructor(city) {
@@ -9,7 +11,7 @@ export default class Weather {
 		const loader = document.querySelector('.loading');
 		loader.classList.toggle('visible');
 		const req = await axios.get(
-			`http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=87d147bb9babc701d0563581a45f275a`,
+			`http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${process.env.API_KEY}`,
 		);
 
 		return Promise.resolve(req.data);
