@@ -27,8 +27,6 @@ function getWeather() {
 		.then((result) => {
 			loader.classList.toggle('visible');
 			UIpaint(result);
-			console.log('Load complete');
-			console.log(result);
 		})
 		.catch((err) => {
 			loader.classList.toggle('visible');
