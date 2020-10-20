@@ -1153,7 +1153,7 @@ module.exports = function xhrAdapter(config) {
   });
 };
 
-},{"./../utils":"node_modules/axios/lib/utils.js","./../core/settle":"node_modules/axios/lib/core/settle.js","./../helpers/buildURL":"node_modules/axios/lib/helpers/buildURL.js","../core/buildFullPath":"node_modules/axios/lib/core/buildFullPath.js","./../helpers/parseHeaders":"node_modules/axios/lib/helpers/parseHeaders.js","./../helpers/isURLSameOrigin":"node_modules/axios/lib/helpers/isURLSameOrigin.js","../core/createError":"node_modules/axios/lib/core/createError.js","./../helpers/cookies":"node_modules/axios/lib/helpers/cookies.js"}],"../../../../.nvm/versions/node/v14.9.0/lib/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
+},{"./../utils":"node_modules/axios/lib/utils.js","./../core/settle":"node_modules/axios/lib/core/settle.js","./../helpers/buildURL":"node_modules/axios/lib/helpers/buildURL.js","../core/buildFullPath":"node_modules/axios/lib/core/buildFullPath.js","./../helpers/parseHeaders":"node_modules/axios/lib/helpers/parseHeaders.js","./../helpers/isURLSameOrigin":"node_modules/axios/lib/helpers/isURLSameOrigin.js","../core/createError":"node_modules/axios/lib/core/createError.js","./../helpers/cookies":"node_modules/axios/lib/helpers/cookies.js"}],"node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -1462,7 +1462,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-},{"./utils":"node_modules/axios/lib/utils.js","./helpers/normalizeHeaderName":"node_modules/axios/lib/helpers/normalizeHeaderName.js","./adapters/xhr":"node_modules/axios/lib/adapters/xhr.js","./adapters/http":"node_modules/axios/lib/adapters/xhr.js","process":"../../../../.nvm/versions/node/v14.9.0/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/axios/lib/core/dispatchRequest.js":[function(require,module,exports) {
+},{"./utils":"node_modules/axios/lib/utils.js","./helpers/normalizeHeaderName":"node_modules/axios/lib/helpers/normalizeHeaderName.js","./adapters/xhr":"node_modules/axios/lib/adapters/xhr.js","./adapters/http":"node_modules/axios/lib/adapters/xhr.js","process":"node_modules/process/browser.js"}],"node_modules/axios/lib/core/dispatchRequest.js":[function(require,module,exports) {
 'use strict';
 
 var utils = require('./../utils');
@@ -2631,9 +2631,9 @@ try {
   Function("r", "regeneratorRuntime = r")(runtime);
 }
 
-},{}],"../../../../.nvm/versions/node/v14.9.0/lib/node_modules/parcel-bundler/src/builtins/_empty.js":[function(require,module,exports) {
+},{}],"node_modules/parcel-bundler/src/builtins/_empty.js":[function(require,module,exports) {
 
-},{}],"../../../../.nvm/versions/node/v14.9.0/lib/node_modules/parcel-bundler/node_modules/path-browserify/index.js":[function(require,module,exports) {
+},{}],"node_modules/path-browserify/index.js":[function(require,module,exports) {
 var process = require("process");
 // .dirname, .basename, and .extname methods are extracted from Node.js v8.11.1,
 // backported and transplited with Babel, with backwards-compat fixes
@@ -2938,7 +2938,7 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-},{"process":"../../../../.nvm/versions/node/v14.9.0/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/dotenv/lib/main.js":[function(require,module,exports) {
+},{"process":"node_modules/process/browser.js"}],"node_modules/dotenv/lib/main.js":[function(require,module,exports) {
 var process = require("process");
 /*::
 
@@ -3069,7 +3069,7 @@ function config(options
 
 module.exports.config = config;
 module.exports.parse = parse;
-},{"fs":"../../../../.nvm/versions/node/v14.9.0/lib/node_modules/parcel-bundler/src/builtins/_empty.js","path":"../../../../.nvm/versions/node/v14.9.0/lib/node_modules/parcel-bundler/node_modules/path-browserify/index.js","process":"../../../../.nvm/versions/node/v14.9.0/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"js/weather.js":[function(require,module,exports) {
+},{"fs":"node_modules/parcel-bundler/src/builtins/_empty.js","path":"node_modules/path-browserify/index.js","process":"node_modules/process/browser.js"}],"js/weather.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3116,7 +3116,7 @@ var Weather = /*#__PURE__*/function () {
                 loader = document.querySelector('.loading');
                 loader.classList.toggle('visible');
                 _context.next = 4;
-                return _axios.default.get("http://api.openweathermap.org/data/2.5/weather?q=".concat(this.city, "&units=metric&appid=").concat("87d147bb9babc701d0563581a45f275a"));
+                return _axios.default.get("https://api.openweathermap.org/data/2.5/weather?q=".concat(this.city, "&units=metric&appid=").concat("87d147bb9babc701d0563581a45f275a"));
 
               case 4:
                 req = _context.sent;
@@ -3211,7 +3211,7 @@ function getWeather() {
     alert('No city with that name');
   });
 }
-},{"./weather":"js/weather.js","./ui":"js/ui.js","regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js"}],"../../../../.nvm/versions/node/v14.9.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./weather":"js/weather.js","./ui":"js/ui.js","regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -3239,7 +3239,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46567" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36781" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -3415,5 +3415,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../.nvm/versions/node/v14.9.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
 //# sourceMappingURL=/app.c3f9f951.js.map

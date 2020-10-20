@@ -11,7 +11,7 @@ export default class Weather {
 		const loader = document.querySelector('.loading');
 		loader.classList.toggle('visible');
 		const req = await axios.get(
-			`http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${process.env.API_KEY}`,
+			`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=${process.env.API_KEY}`,
 		);
 
 		return Promise.resolve(req.data);
